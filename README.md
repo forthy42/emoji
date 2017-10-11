@@ -22,7 +22,9 @@ Origin: https://github.com/emojione/emojione
 
 License: CC-BY-4.0 and MIT
 
-Origin: https://github.com/eosrei/twemoji-color-font
+Origin: https://github.com/eosrei/twemoji-color-font (SVG)
+
+CBDT version: http://bytestyle.altervista.org/blog/twemoji-for-android/
 
 ## Noto Emoji
 
