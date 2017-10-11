@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Simple debian/rules that uses debhelper.
+# Created by Bernd Paysan, in the public domain
+
+DN = $(CURDIR)/debian/noto-emoji
+DT = $(CURDIR)/debian/twitter-emoji
+DO = $(CURDIR)/debian/emojione
+
+%:
+	dh $@ 
+
+#override_dh_auto_test:
+override_dh_auto_install:
+	rm -rf $(DN) $(DO) $(DT)
+	dh_auto_install -- DESTDIR=$(DN)
+	mkdir -p $(DO)/usr/share/fonts/truetype
+	mkdir -p $(DT)/usr/share/fonts/truetype
+	mv $(DN)/usr/share/fonts/truetype/emojione-android.ttf $(DO)/usr/share/fonts/truetype
+	mv $(DN)/usr/share/fonts/truetype/TwitterColorEmojiv2.ttf $(DT)/usr/share/fonts/truetype
+
+override_dh_installchangelogs:
+	mkdir $(DN)/usr/share/doc/emoji/
+	git log | gzip >$(DN)/usr/share/doc/emoji/changelog.gz
+	rm -rf $(DT)/usr/share/doc
+	rm -rf $(DO)/usr/share/doc
