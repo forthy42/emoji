@@ -7,13 +7,16 @@ Build-Depends: debhelper (>= 4.1.16), build-essential, autoconf, automake, autot
 Package: @PACKAGE_NAME@one
 Version: @PACKAGE_VERSION@
 Architecture: all
+License: Emojione-free
 Description: Emojione font
  EmojiOne font in CBTD bitmap format
+ Emoji artwork provided by EmojiOne http://emojione.com
  .
 
-Package: twitter-@PACKAGE_NAME@
+Package: tw@PACKAGE_NAME@
 Version: @PACKAGE_VERSION@
 Architecture: all
+License: CC-BY-4.0
 Description: Twitter Emoji font
  Twitter Emoji font in CBTD bitmap format
  .
@@ -21,6 +24,7 @@ Description: Twitter Emoji font
 Package: noto-@PACKAGE_NAME@
 Version: @PACKAGE_VERSION@
 Architecture: all
+License: Apache License 2.0/SIL OFL 1.1
 Description: Noto Emoji font
  Noto Emoji font in CBTD bitmap format
  .
