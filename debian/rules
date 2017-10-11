@@ -16,8 +16,8 @@ override_dh_auto_install:
 	dh_auto_install -- DESTDIR=$(DN)
 	mkdir -p $(DO)/usr/share/fonts/truetype/emoji
 	mkdir -p $(DT)/usr/share/fonts/truetype/emoji
-	mv $(DN)/usr/share/fonts/truetype/emojione-android.ttf $(DO)/usr/share/fonts/truetype/emoji
-	mv $(DN)/usr/share/fonts/truetype/TwitterColorEmojiv2.ttf $(DT)/usr/share/fonts/truetype/emoji
+	mv $(DN)/usr/share/fonts/truetype/emoji/emojione-android.ttf $(DO)/usr/share/fonts/truetype/emoji
+	mv $(DN)/usr/share/fonts/truetype/emoji/TwitterColorEmojiv2.ttf $(DT)/usr/share/fonts/truetype/emoji
 
 override_dh_installchangelogs:
 	mkdir $(DN)/usr/share/doc/emoji/
