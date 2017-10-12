@@ -3,9 +3,9 @@
 # Simple debian/rules that uses debhelper.
 # Created by Bernd Paysan, in the public domain
 
-DN = $(CURDIR)/debian/noto-emoji
-DT = $(CURDIR)/debian/twemoji
-DO = $(CURDIR)/debian/emojione
+DN = $(CURDIR)/debian/fonts-noto-emoji
+DT = $(CURDIR)/debian/fonts-twemoji
+DO = $(CURDIR)/debian/fonts-emojione
 
 %:
 	dh $@ 
