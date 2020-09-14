@@ -1,6 +1,6 @@
 ## ExampleLib Example: an example of using Automake to link with a library
 
-AC_INIT([emoji], [1.2], [bernd@net2o.de], [emoji font packages],
+AC_INIT([emoji], [1.3], [bernd@net2o.de], [emoji font packages],
         [https://github.com/forthy42/emoji])
 AC_PREREQ([2.59])
 AM_INIT_AUTOMAKE([1.10 -Wall no-define])

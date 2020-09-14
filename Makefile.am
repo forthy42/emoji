@@ -1,6 +1,6 @@
 # Automake file for emoji
 
-fonts_DATA = emojione-android.ttf NotoColorEmoji.ttf TwitterColorEmojiv2.ttf
+fonts_DATA = emojione-android.ttf NotoColorEmoji.ttf Twemoji.ttf fa-merged-900.ttf
 
 fontsdir = $(datarootdir)/fonts/truetype/emoji
 
